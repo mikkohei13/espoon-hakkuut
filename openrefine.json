@@ -1,0 +1,571 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Column 4 using expression grel:replace(value, ' hehtaaria', '')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Column 4",
+    "expression": "grel:replace(value, ' hehtaaria', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 4 to ha",
+    "oldColumnName": "Column 4",
+    "newColumnName": "ha"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column to alue",
+    "oldColumnName": "Column",
+    "newColumnName": "alue"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column 1 to lohko",
+    "oldColumnName": "1",
+    "newColumnName": "lohko"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column 100 to kuvio",
+    "oldColumnName": "100",
+    "newColumnName": "kuvio"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column alue to lohkokuvio",
+    "oldColumnName": "alue",
+    "newColumnName": "lohkokuvio"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Column 5 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Column 5",
+    "guessCellType": true,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": "-vuotias",
+    "regex": false,
+    "maxColumns": 2
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Column 5 1 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Column 5 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 1 2 to ikä",
+    "oldColumnName": "Column 5 1 2",
+    "newColumnName": "ikä"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "  kangasmetsä, joka on kasvupaikaltaan tuoretta kangasta."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "joka on kasvupaikaltaan lehtoa."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "joka on kasvupaikaltaan lehtomaista kangasta."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "alue."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kangasmetsä, joka on kasvupaikaltaan tuoretta kangasta."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "korpi, jonka kasvupaikka vastaa tuoretta kangasta."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "maa."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "räme"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ""
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 1 1 to puulaji",
+    "oldColumnName": "Column 5 1 1",
+    "newColumnName": "puulaji"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 to kuvaus",
+    "oldColumnName": "Column 5",
+    "newColumnName": "kuvaus"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 5 2",
+    "columnName": "Column 5 2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 6 to ehdotus",
+    "oldColumnName": "Column 6",
+    "newColumnName": "ehdotus"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 7 to ehdotus2",
+    "oldColumnName": "Column 7",
+    "newColumnName": "ehdotus2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 8",
+    "columnName": "Column 8"
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": true,
+          "selection": [],
+          "selectError": false,
+          "invert": false,
+          "name": "lohkokuvio",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "lohkokuvio"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ha",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "hehtaaria",
+                "l": "hehtaaria"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "ha",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "ha"
+        }
+      ]
+    },
+    "columnName": "ha",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hehtaaria"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column palautelinkki at index 2 based on column kuvio using expression grel:'http://maps.ramboll.fi/palaute/kyselyt/espoonmetsat/palaute_nayta_palaute.php?MAPNAME=Espoo1424122956809&id=' + cells['lohko'].value + '&panel=map&kuvio=' + value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "palautelinkki",
+    "columnInsertIndex": 2,
+    "baseColumnName": "kuvio",
+    "expression": "grel:'http://maps.ramboll.fi/palaute/kyselyt/espoonmetsat/palaute_nayta_palaute.php?MAPNAME=Espoo1424122956809&id=' + cells['lohko'].value + '&panel=map&kuvio=' + value",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column puulaji",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "räme.",
+                "l": "räme."
+              }
+            },
+            {
+              "v": {
+                "v": "joka on kasvupaikaltaan tuoretta kangasta.",
+                "l": "joka on kasvupaikaltaan tuoretta kangasta."
+              }
+            },
+            {
+              "v": {
+                "v": "jonka kasvupaikka vastaa karukkokangasta.",
+                "l": "jonka kasvupaikka vastaa karukkokangasta."
+              }
+            },
+            {
+              "v": {
+                "v": "soistunut alue.",
+                "l": "soistunut alue."
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "ikä",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "ikä"
+        }
+      ]
+    },
+    "columnName": "puulaji",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Karu"
+        ],
+        "to": "Karu räme"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "räme.",
+                "l": "räme."
+              }
+            },
+            {
+              "v": {
+                "v": "joka on kasvupaikaltaan tuoretta kangasta.",
+                "l": "joka on kasvupaikaltaan tuoretta kangasta."
+              }
+            },
+            {
+              "v": {
+                "v": "jonka kasvupaikka vastaa karukkokangasta.",
+                "l": "jonka kasvupaikka vastaa karukkokangasta."
+              }
+            },
+            {
+              "v": {
+                "v": "soistunut alue.",
+                "l": "soistunut alue."
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "ikä",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "ikä"
+        }
+      ]
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "joka on kasvupaikaltaan tuoretta kangasta."
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ikä",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "räme.",
+                "l": "räme."
+              }
+            },
+            {
+              "v": {
+                "v": "joka on kasvupaikaltaan tuoretta kangasta.",
+                "l": "joka on kasvupaikaltaan tuoretta kangasta."
+              }
+            },
+            {
+              "v": {
+                "v": "jonka kasvupaikka vastaa karukkokangasta.",
+                "l": "jonka kasvupaikka vastaa karukkokangasta."
+              }
+            },
+            {
+              "v": {
+                "v": "soistunut alue.",
+                "l": "soistunut alue."
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "ikä",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "ikä"
+        }
+      ]
+    },
+    "columnName": "ikä",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "räme."
+        ],
+        "to": ""
+      }
+    ]
+  }
+]
